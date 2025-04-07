@@ -56,12 +56,17 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 5. Define the language-model
 
      Place your model within ./models and update the .env-variable
+     
+     Tested with
+
+       https://huggingface.co/TheBloke/Orca-2-13B-GGUF/blob/main/orca-2-13b.Q4_0.gguf
+       https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/blob/main/Meta-Llama-3-8B-Instruct.Q4_0.gguf
 
 5. Run the application:
      ```bash
      python extract_zip.py
      python populate_database.py --reset
-     python query_data.py "What is the project name?"
+     python query_data.py "What is the name of the project?"
      ```
 
 ## Technologies Used
