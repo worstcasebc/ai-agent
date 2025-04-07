@@ -34,15 +34,25 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
      ```bash
      git clone https://github.com/your-username/ai-agent.git
      ```
-2. Install dependencies:
+
+2. Create environment:
+
+     SHIFT+CRTL+P - Python-Create Envrionment (including pip-install of requirements.txt)
+     Open up a terminal 
+     ```bash
+     .\.venv\Scripts\activate.ps1
+     ```
+
+3. optional install of dependencies (if not done in step 2):
      ```bash
      pip install -r requirements.txt
      ```
-3. Provide an OpenAI-API-key
+
+4. Provide an OpenAI-API-key
      create a file '.env' within the root-directory (contained within .gitignore)
      provide the key-variable OPENAI_API_KEY = "your-key" if OpenAI is used as LLM
 
-4. Run the application:
+5. Run the application:
      ```bash
      python extract_zip.py
      python populate_database.py --reset

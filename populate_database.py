@@ -6,10 +6,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
 from get_embedding_function import get_embedding_function
 from langchain_chroma import Chroma
-
-
-CHROMA_PATH = "chroma"
-DATA_PATH = ".\\temp\\bid"  # Path to the directory containing PDF files
+from dotenv import load_dotenv
 
 
 def main():
@@ -23,20 +20,13 @@ def main():
 
     # Create (or update) the data store.
     documents = load_documents()
-    # documents = load_pdf(".\\temp\\bid\\leistungsbeschreibungen\\01_RV_Digitalisierung_-_Einzelabruf_25-2000055307.pdf")
     chunks = split_documents(documents)
     add_to_chroma(chunks)
 
 
 def load_documents():
-    document_loader = PyPDFDirectoryLoader(DATA_PATH)
+    document_loader = PyPDFDirectoryLoader(os.getenv("DATA_PATH"))
     return document_loader.load()
-
-
-def load_pdf(file_path):
-    # Load a single PDF file.
-    loader = PyPDFLoader(file_path)
-    return loader.load()
 
 
 def split_documents(documents: list[Document]):
@@ -52,7 +42,7 @@ def split_documents(documents: list[Document]):
 def add_to_chroma(chunks: list[Document]):
     # Load the existing database.
     db = Chroma(
-        persist_directory=CHROMA_PATH, embedding_function=get_embedding_function()
+        persist_directory=os.getenv("CHROMA_PATH"), embedding_function=get_embedding_function()
     )
 
     # Calculate Page IDs.
@@ -107,8 +97,8 @@ def calculate_chunk_ids(chunks):
 
 
 def clear_database():
-    if os.path.exists(CHROMA_PATH):
-        shutil.rmtree(CHROMA_PATH)
+    if os.path.exists(os.getenv("CHROMA_PATH")):
+        shutil.rmtree(os.getenv("CHROMA_PATH"))
 
 
 if __name__ == "__main__":
