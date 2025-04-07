@@ -53,7 +53,8 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
      provide the key-variable OPENAI_API_KEY = "your-key" if OpenAI is used as LLM
 
 5. Define the language-model
-     Place your model within ./models and 
+
+     Place your model within ./models and update the .env-variable
 
 5. Run the application:
      ```bash
