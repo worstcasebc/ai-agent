@@ -100,7 +100,6 @@ def calculate_chunk_ids(chunks):
 
 
 def clear_database():
-    print(os.getenv("CHROMA_PATH"))
     if os.path.exists(os.getenv("CHROMA_PATH")):
         shutil.rmtree(os.getenv("CHROMA_PATH"))
 

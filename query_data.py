@@ -48,9 +48,10 @@ def query_rag(query_text: str):
     model = GPT4All(model=os.getenv("MODEL_PATH"))
     response_text = model.invoke(prompt)
 
-    sources = [doc.metadata.get("id", None) for doc, _score in results]
-    formatted_response = f"Response: {response_text}\nSources: {sources}"
-    print(formatted_response)
+    # sources = [doc.metadata.get("id", None) for doc, _score in results]
+    # formatted_response = f"Response: {response_text}\nSources: {sources}"
+    # print(formatted_response)
+    print(f"{response_text}\n")
     return response_text
 
 
