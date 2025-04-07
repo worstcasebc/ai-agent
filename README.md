@@ -1,8 +1,13 @@
 # AI-Agent for Bid Processes
 
+## Status
+
+The project is at it's first stage and more a collection of code-snippets, than a regular project.
+Credits to https://github.com/pixegami
+
 ## Overview
 
-This project is an AI-powered agent designed to streamline and enhance your bid processes. By leveraging advanced natural language processing and automation, the AI-agent extracts information from documents, processes it intelligently, and performs various tasks to support your workflow.
+This project is an AI-powered agent designed to streamline and enhance the bid processes around an OPLs client. By leveraging advanced natural language processing and automation, the AI-agent extracts information from documents, processes it intelligently, and performs various tasks to support the bid-workflow.
 
 ## Features
 
@@ -10,16 +15,18 @@ This project is an AI-powered agent designed to streamline and enhance your bid 
 - **Chunking and Embedding**: Splits documents into manageable chunks and generates embeddings for efficient information retrieval.
 - **LLM Integration**: Feeds processed data into a large language model (LLM) to retrieve relevant information and insights.
 - **Task Automation**:
-    - Prepares presentations based on extracted data.
-    - Schedules and invites stakeholders to approval meetings.
-    - Creates and updates CRM entries automatically.
+    - Prepares ESR-slides based on extracted data
+    - Schedules and invites stakeholders to ESR- and SSR-meetings
+    - Creates and updates CRM entry automatically
+    - Creates Talento-opportunity to search for partners to staff the project-team
+    - Start DRSR-request automatically
 
 ## Benefits
 
-- Saves time by automating repetitive tasks.
-- Improves accuracy in bid preparation and management.
-- Enhances collaboration and decision-making with timely insights.
-- Reduces manual effort, allowing you to focus on strategic activities.
+- Saves time by automating repetitive tasks
+- Improves accuracy in bid preparation and management
+- Enhances collaboration and decision-making with timely insights
+- Reduces manual effort, allowing you to focus on strategic activities
 
 ## Getting Started
 
@@ -31,9 +38,15 @@ This project is an AI-powered agent designed to streamline and enhance your bid 
      ```bash
      pip install -r requirements.txt
      ```
-3. Run the application:
+3. Provide an OpenAI-API-key
+     create a file '.env' within the root-directory (contained within .gitignore)
+     provide the key-variable OPENAI_API_KEY = "your-key" if OpenAI is used as LLM
+
+4. Run the application:
      ```bash
-     python main.py
+     python extract_zip.py
+     python populate_database.py --reset
+     python query_data.py "What is the project name?"
      ```
 
 ## Technologies Used

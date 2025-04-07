@@ -11,7 +11,7 @@ def extract_zip(zip_path, extract_to):
 
 filename = "Vergabeunterlagen_CXP4Y635F4H.zip"  # Replace with your zip file name
 zipfile_path = "C:\\Users\\worst\\Downloads"  # Replace with your zip file path
-extract_to_path = ".\\temp\\tmp_Bid"  # Replace with your extraction path
+extract_to_path = ".\\temp\\bid"  # Replace with your extraction path
 
 extract_zip(os.path.join(zipfile_path, filename), extract_to_path)
 

@@ -1,0 +1,6 @@
+pypdf       # For PDF document loading
+langchain   # For document loading and processing
+langchain_community # For document loaders and tools
+langchain-chroma # For vector store support
+gpt4all     # For LLMs and embeddings
+gpt4all[cuda] # For GPU support (optional)
