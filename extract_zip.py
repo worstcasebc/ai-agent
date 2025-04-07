@@ -1,8 +1,6 @@
 import zipfile
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 
 def extract_zip(zip_path, extract_to):
     """Extracts a zip file to the specified directory."""

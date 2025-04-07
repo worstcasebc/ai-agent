@@ -1,3 +1,4 @@
+import os
 import argparse
 from langchain_chroma import Chroma
 from langchain.prompts import ChatPromptTemplate
@@ -40,7 +41,7 @@ def query_rag(query_text: str):
     prompt = prompt_template.format(context=context_text, question=query_text)
     # print(prompt)
 
-    model = GPT4All(model="Meta-Llama-3-8B-Instruct.Q4_0.gguf")
+    model = GPT4All(model=os.getenv("MODEL_PATH"))
     response_text = model.invoke(prompt)
 
     sources = [doc.metadata.get("id", None) for doc, _score in results]
