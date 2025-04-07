@@ -6,6 +6,9 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
 from get_embedding_function import get_embedding_function
 from langchain_chroma import Chroma
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def main():
@@ -97,6 +100,7 @@ def calculate_chunk_ids(chunks):
 
 
 def clear_database():
+    print(os.getenv("CHROMA_PATH"))
     if os.path.exists(os.getenv("CHROMA_PATH")):
         shutil.rmtree(os.getenv("CHROMA_PATH"))
 

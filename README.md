@@ -48,8 +48,9 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
      pip install -r requirements.txt
      ```
 
-4. Provide an OpenAI-API-key (optional)
-     create a file '.env' within the root-directory (contained within .gitignore)
+4. set-up for your environment
+
+     copy '.env.example' into '.env' and update with your paths
      provide the key-variable OPENAI_API_KEY = "your-key" if OpenAI is used as LLM
 
 5. Define the language-model
