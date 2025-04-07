@@ -101,4 +101,5 @@ lancedb/
 # Exclude temporary files
 temp/
 chroma/
-models/*
+models/*.gguf
+models/*.bin
