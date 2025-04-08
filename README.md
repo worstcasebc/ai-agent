@@ -11,15 +11,17 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 
 ## Features
 
-- **Document Extraction**: Automatically extracts content from bid-related documents.
-- **Chunking and Embedding**: Splits documents into manageable chunks and generates embeddings for efficient information retrieval.
-- **LLM Integration**: Feeds processed data into a large language model (LLM) to retrieve relevant information and insights.
-- **Task Automation**:
+- &#9989; **Document Extraction**: Automatically extracts content from bid-related documents.
+- &#9989; **Chunking and Embedding**: Splits documents into manageable chunks and generates embeddings for efficient information retrieval.
+- &#9989; **LLM Integration**: Feeds processed data into a large language model (LLM) to retrieve relevant information and insights.
+- &#10060; **Task Automation**:
     - Prepares ESR-slides based on extracted data
     - Schedules and invites stakeholders to ESR- and SSR-meetings
     - Creates and updates CRM entry automatically
     - Creates Talento-opportunity to search for partners to staff the project-team
     - Start DRSR-request automatically
+    - Find and retrieve project-references from BidGen and/or BDKX
+    - Create concepts and other requested documents
 
 ## Benefits
 
