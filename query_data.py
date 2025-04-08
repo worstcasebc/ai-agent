@@ -1,5 +1,6 @@
 import os
 import argparse
+import time
 from langchain_chroma import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.llms.gpt4all import GPT4All
@@ -46,7 +47,14 @@ def query_rag(query_text: str):
     # print(prompt)
 
     model = GPT4All(model=os.getenv("MODEL_PATH"))
+
+    # measure time of running the model
+    start_time = time.time()
+    # Invoke the model with the prompt
     response_text = model.invoke(prompt)
+    end_time = time.time()
+
+    print(f"Model response time: {end_time - start_time:.2f} seconds")
 
     # sources = [doc.metadata.get("id", None) for doc, _score in results]
     # formatted_response = f"Response: {response_text}\nSources: {sources}"
