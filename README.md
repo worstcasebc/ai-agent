@@ -35,15 +35,22 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
      git clone https://github.com/your-username/ai-agent.git
      ```
 
-2. Create environment:
+2. change directory
+     ```bash
+     cd ai-agent
+     ```
 
-     SHIFT+CRTL+P - Python-Create Envrionment (including pip-install of requirements.txt)
-     Open up a terminal 
+3. Create environment:
+     ```bash
+     python -m venv .venv
+     ```
+
+4. Activate environment
      ```bash
      .\.venv\Scripts\activate.ps1
      ```
 
-3. optional install of dependencies (if not done in step 2):
+3. optional install of dependencies:
      ```bash
      pip install -r requirements.txt
      ```
@@ -51,7 +58,6 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 4. set-up for your environment
 
      copy '.env.example' into '.env' and update with your paths
-     provide the key-variable OPENAI_API_KEY = "your-key" if OpenAI is used as LLM
 
 5. Define the language-model
 
@@ -66,7 +72,11 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 5. Run the application:
      ```bash
      python extract_zip.py
+     ```
+     ```bash
      python populate_database.py --reset
+     ```
+     ```bash
      python query_data.py "What is the name of the project?"
      ```
 
@@ -80,7 +90,7 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 
 ![LLM-stages as of anthropic.com](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7418719e3dab222dccb379b8879e1dc08ad34c78-2401x1000.png&w=3840&q=75)
 
-## VSCode Extensions
+## recommended VSCode Extensions
 
 Atom One Dark Theme, Better Comments, Django, GitHub Copilot, GitHub Pull Requests, IntelliCode, Jupyter, Material Icon Theme, Material Theme Icons, Path Intellisense, Python,
 Python Debugger, Python Environment Manager, Python Environments, Python Extension Pack, Python Intend, Pylance, Ruff, vscode-pdf
