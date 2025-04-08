@@ -95,7 +95,7 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 - Embedding generation libraries
 - Task automation frameworks
 
-![LLM-stages as of anthropic.com](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7418719e3dab222dccb379b8879e1dc08ad34c78-2401x1000.png&w=3840&q=75)
+![LLM-stages as of anthropic.com](https://www-cdn.anthropic.com/images/4zrzovbb/website/7418719e3dab222dccb379b8879e1dc08ad34c78-2401x1000.png)
 
 ## recommended VSCode Extensions
 
