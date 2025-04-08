@@ -46,22 +46,27 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
      ```
 
 4. Activate environment
+     
+     If powershell is used
      ```bash
      .\.venv\Scripts\activate.ps1
      ```
-
-3. optional install of dependencies:
+     In case of terminal-window
+     ```bash
+     .\.venv\Scripts\activate.bat
+     ```
+5. Installation of dependencies:
      ```bash
      pip install -r requirements.txt
      ```
 
-4. set-up for your environment
+6. set-up for your environment
 
      copy '.env.example' into '.env' and update with your paths
 
-5. Define the language-model
+7. Define the language-model
 
-     Place your model within ./models and update the .env-variable
+     Place your model within ./models and update the .env-variable (Download-link below)
      
      Tested with
 
@@ -69,7 +74,7 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 
      [Meta-Llama-3-8B](https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/blob/main/Meta-Llama-3-8B-Instruct.Q4_0.gguf)
 
-5. Run the application:
+8. Run the application:
      ```bash
      python extract_zip.py
      ```
