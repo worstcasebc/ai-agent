@@ -48,10 +48,8 @@ def query_rag(query_text: str):
     prompt = prompt_template.format(context=context_text, question=query_text)
     # print(prompt)
 
-    # model = GPT4All(model=os.getenv("MODEL_PATH"))
-    model = ChatOpenAI(
-        model=os.getenv("OPENAI_MODEL"), openai_api_key=os.getenv("OPENAI_API_KEY")
-    )
+    model = GPT4All(model=os.getenv("MODEL_PATH"))
+    # model = ChatOpenAI(model=os.getenv("OPENAI_MODEL"), openai_api_key=os.getenv("OPENAI_API_KEY"))
 
     # measure time of running the model
     start_time = time.time()
