@@ -30,6 +30,16 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 - Enhances collaboration and decision-making with timely insights
 - Reduces manual effort, allowing you to focus on strategic activities
 
+## Choose your model
+
+- If OpenAI should be used, an API-key is necessary. Get yours [here](https://platform.openai.com/).
+- Track costs of OpenAI-requests within the [Usage-dashboad](https://platform.openai.com/usage).
+- Add your API-key into '.env' and ensure, that file is mentioned within '.gitignore'. Don't share it.
+
+- If local LLM-model is what you are here for, then download one of the models mentioned in belows step 7 and put it into ./models. 
+
+- Update '.env' accordingly and choose the right method in query_data.py as well as in get_embedding_function.py.
+
 ## Getting Started
 
 1. Clone the repository:
@@ -71,6 +81,8 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
      Place your model within ./models and update the .env-variable (Download-link below)
      
      Tested with
+
+     OpenAI (when switching models, resetting the database by populating it new with parameter --reset is necessary)
 
      [Orca-2-13B](https://huggingface.co/TheBloke/Orca-2-13B-GGUF/blob/main/orca-2-13b.Q4_0.gguf)
 

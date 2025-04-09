@@ -48,8 +48,10 @@ def query_rag(query_text: str):
     prompt = prompt_template.format(context=context_text, question=query_text)
     # print(prompt)
 
-    model = GPT4All(model=os.getenv("MODEL_PATH"))
-    # model = ChatOpenAI(model=os.getenv("OPENAI_MODEL"), openai_api_key=os.getenv("OPENAI_API_KEY"))
+    # model = GPT4All(model=os.getenv("MODEL_PATH"))
+    model = ChatOpenAI(
+        model=os.getenv("MODEL_PATH"), openai_api_key=os.getenv("OPENAI_API_KEY")
+    )
 
     # measure time of running the model
     start_time = time.time()
@@ -62,7 +64,9 @@ def query_rag(query_text: str):
     # sources = [doc.metadata.get("id", None) for doc, _score in results]
     # formatted_response = f"Response: {response_text}\nSources: {sources}"
     # print(formatted_response)
-    print(f"{response_text}\n")
+
+    # print(f"{response_text}\n") # for gpt4all-model response
+    print(f"{response_text.content}\n")  # for OpenAI-response
     return response_text
 
 
