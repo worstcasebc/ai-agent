@@ -4,6 +4,8 @@ import time
 from langchain_chroma import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.llms.gpt4all import GPT4All
+from langchain_openai import ChatOpenAI
+
 
 from get_embedding_function import get_embedding_function
 from dotenv import load_dotenv
@@ -46,7 +48,10 @@ def query_rag(query_text: str):
     prompt = prompt_template.format(context=context_text, question=query_text)
     # print(prompt)
 
-    model = GPT4All(model=os.getenv("MODEL_PATH"))
+    # model = GPT4All(model=os.getenv("MODEL_PATH"))
+    model = ChatOpenAI(
+        model=os.getenv("OPENAI_MODEL"), openai_api_key=os.getenv("OPENAI_API_KEY")
+    )
 
     # measure time of running the model
     start_time = time.time()
