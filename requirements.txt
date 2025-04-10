@@ -7,3 +7,4 @@ gpt4all     # For LLMs and embeddings
 gpt4all[cuda] # For GPU support (optional)
 openai 
 tiktoken # For tokenization
+imap-tools # For email loading and processing
