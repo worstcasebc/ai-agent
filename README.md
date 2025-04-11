@@ -2,7 +2,8 @@
 
 ## Status
 
-The project is at it's first stage and more a collection of code-snippets, than a regular project.
+The project is at it's first stage and more a collection of code-snippets, than a regular project. It is intended as a prototypical implementation to build knowledge in the field of AI while simultaneously generating meaningful value. 
+
 Credits to https://github.com/pixegami
 
 ## Overview
@@ -11,7 +12,9 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 
 ## Features
 
-- &#9989; **Document Extraction**: Automatically extracts content from bid-related documents.
+- &#9989; **Mail Retrieval**: Automatically check mail-account for new bid-related mails, add mail-body to LLM-context and search for bid-id.
+- &#10060; **Download Documents**: Use bid-id to download ZIP-package from DTVP.
+- &#9989; **Document Extraction**: Automatically extracts content from bid-related documents (ZIP).
 - &#9989; **Chunking and Embedding**: Splits documents into manageable chunks and generates embeddings for efficient information retrieval.
 - &#9989; **LLM Integration**: Feeds processed data into a large language model (LLM) to retrieve relevant information and insights.
 - &#10060; **Task Automation**:
@@ -78,17 +81,20 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 
 7. Define the language-model
 
-     Place your model within ./models and update the .env-variable (Download-link below)
+     * Place your model within ./models and update the .env-variable (Download-link below)
      
-     Tested with
+     * Tested with
 
-     OpenAI (when switching models, resetting the database by populating it new with parameter --reset is necessary)
+          * OpenAI (when switching models, resetting the database by populating it new with parameter --reset is necessary)
 
-     [Orca-2-13B](https://huggingface.co/TheBloke/Orca-2-13B-GGUF/blob/main/orca-2-13b.Q4_0.gguf)
+          * [Orca-2-13B](https://huggingface.co/TheBloke/Orca-2-13B-GGUF/blob/main/orca-2-13b.Q4_0.gguf)
 
-     [Meta-Llama-3-8B](https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/blob/main/Meta-Llama-3-8B-Instruct.Q4_0.gguf)
+          * [Meta-Llama-3-8B](https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/blob/main/Meta-Llama-3-8B-Instruct.Q4_0.gguf)
 
-8. Run the application:
+8. Run the application-parts:
+     ```bash
+     python check_mail.py
+     ```
      ```bash
      python extract_zip.py
      ```
