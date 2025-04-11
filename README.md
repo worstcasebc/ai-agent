@@ -37,7 +37,7 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 
 - If OpenAI should be used, an API-key is necessary. Get yours [here](https://platform.openai.com/).
 - Track costs of OpenAI-requests within the [Usage-dashboad](https://platform.openai.com/usage).
-- Add your API-key into '.env' and ensure, that file is mentioned within '.gitignore'. Don't share it.
+- Add your API-key into '.env' and ensure, that the '.env'-file is mentioned within '.gitignore'. Don't share the key.
 
 - If local LLM-model is what you are here for, then download one of the models mentioned in belows step 7 and put it into ./models. 
 
@@ -45,7 +45,7 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 
 ## Getting Started
 
-1. Clone the repository:
+1. Clone the repository into your workspace-folder:
      ```bash
      git clone https://github.com/worstcasebc/ai-agent.git
      ```
@@ -70,6 +70,7 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
      ```bash
      .\.venv\Scripts\activate.bat
      ```
+
 5. Installation of dependencies:
      ```bash
      pip install -r requirements.txt
@@ -117,6 +118,7 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 - Task automation frameworks
 
 ![LLM-stages as of anthropic.com](https://www-cdn.anthropic.com/images/4zrzovbb/website/7418719e3dab222dccb379b8879e1dc08ad34c78-2401x1000.png)
+Source [www-cdn.anthropic.com] 
 
 ## recommended VSCode Extensions
 
