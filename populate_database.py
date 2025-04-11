@@ -1,7 +1,11 @@
 import argparse
 import os
 import shutil
-from langchain_community.document_loaders import PyPDFDirectoryLoader
+from langchain_community.document_loaders import (
+    PyPDFDirectoryLoader,
+    TextLoader,
+    BSHTMLLoader,
+)
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
 from get_embedding_function import get_embedding_function
@@ -25,9 +29,21 @@ def main():
     chunks = split_documents(documents)
     add_to_chroma(chunks)
 
+    maildocument = load_maildocument()
+    mail_chunks = split_documents(maildocument)
+    add_to_chroma(mail_chunks)
+    print("✨ Database Updated")
+
 
 def load_documents():
     document_loader = PyPDFDirectoryLoader(os.getenv("DATA_PATH"))
+    print("✨ loaded documents")
+    return document_loader.load()
+
+
+def load_maildocument():
+    document_loader = BSHTMLLoader("./temp/mail.html")
+    print("✨ loaded mail")
     return document_loader.load()
 
 
@@ -38,6 +54,7 @@ def split_documents(documents: list[Document]):
         length_function=len,
         is_separator_regex=False,
     )
+    print("✨ splitted documents")
     return text_splitter.split_documents(documents)
 
 
@@ -50,6 +67,7 @@ def add_to_chroma(chunks: list[Document]):
 
     # Calculate Page IDs.
     chunks_with_ids = calculate_chunk_ids(chunks)
+    print("✨ chunks calculated")
 
     # Add or Update the documents.
     existing_items = db.get(include=[])  # IDs are always included by default

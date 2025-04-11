@@ -53,7 +53,7 @@ def query_rag(query_text: str):
         model=os.getenv("OPENAI_MODEL"), openai_api_key=os.getenv("OPENAI_API_KEY")
     )
 
-    print(f"Model: {model.model_name}")
+    # print(f"Model: {model.model_name}")
 
     # measure time of running the model
     start_time = time.time()

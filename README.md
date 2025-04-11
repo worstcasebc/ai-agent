@@ -98,6 +98,9 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
      ```bash
      python query_data.py "What is the name of the project?"
      ```
+      ```bash
+     python query_data.py "Bitte suche mir aus allen URLs, in der im Kontext bereitgestellten Mail von DTVP, diejenige URL heraus, die zur Projektanfrage der Deutschen Bundesbank, Zentralbereich Beschaffungen gehört und exztrahiere mir die in dieser URL genannte ID, welche mit 'CX beginnt."
+     ```
 
 ## Technologies Used
 
