@@ -93,9 +93,13 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
           * [Meta-Llama-3-8B](https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/blob/main/Meta-Llama-3-8B-Instruct.Q4_0.gguf)
 
 8. Run the application-parts:
+     
+     - to check email, you need a mail-account with one DTVP-email inculuding a Bundesbank-bid
      ```bash
      python check_mail.py
      ```
+
+     - you need one ZIP-file downloaded from DTVP for bids
      ```bash
      python extract_zip.py
      ```
