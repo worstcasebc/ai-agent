@@ -12,8 +12,8 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 
 ## Features
 
-- &#9989; **Mail Retrieval**: Automatically check mail-account for new bid-related mails, add mail-body to LLM-context and search for bid-id.
-- &#10060; **Download Documents**: Use bid-id to download ZIP-package from DTVP.
+- &#9989; **OPTIONAL: Mail Retrieval**: Automatically check mail-account for new bid-related mails, add mail-body to LLM-context and search for bid-id.
+- &#10060; **OPTIONAL: Download Documents**: Use bid-id to download ZIP-package from DTVP.
 - &#9989; **Document Extraction**: Automatically extracts content from bid-related documents (ZIP).
 - &#9989; **Chunking and Embedding**: Splits documents into manageable chunks and generates embeddings for efficient information retrieval.
 - &#9989; **LLM Integration**: Feeds processed data into a large language model (LLM) to retrieve relevant information and insights.
