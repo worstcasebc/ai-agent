@@ -63,5 +63,7 @@
 
     ![Settings for 'format on save'](./tutorial/format_on_save.png)
 
-- Activate 'Ruff' as 'default formatter' also in settings    
+- Activate 'Ruff' as 'default formatter' also in settings
+
+- Activate 'jupyter execute selection'  
 
