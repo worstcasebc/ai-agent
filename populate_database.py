@@ -29,9 +29,9 @@ def main():
     chunks = split_documents(documents)
     add_to_chroma(chunks)
 
-    maildocument = load_maildocument()
-    mail_chunks = split_documents(maildocument)
-    add_to_chroma(mail_chunks)
+    # maildocument = load_maildocument()
+    # mail_chunks = split_documents(maildocument)
+    # add_to_chroma(mail_chunks)
     print("✨ Database Updated")
 
 

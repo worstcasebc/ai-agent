@@ -27,13 +27,13 @@
     ```
 
     ```bash
-     cd ai-agent
-     ```
+    cd ai-agent
+    ```
 
 - Create an environment:
-     ```bash
-     python -m venv .venv
-     ```     
+    ```bash
+    python -m venv .venv
+    ```     
 
 ## Open the project in VSCode
 
@@ -55,7 +55,7 @@
 
 - Check and (if you like) install the following extensions for VSCode
 
-    * *Atom One Dark Theme, Better Comments, Django, GitHub Copilot, GitHub Pull Requests, IntelliCode, Jupyter, Material Icon Theme, Material Theme Icons, Path Intellisense, Python,Python Debugger, Python Environment Manager, Python Environments, Python Extension Pack, Python Intend, Pylance, Ruff, vscode-pdf* *
+    *Atom One Dark Theme, Better Comments, Django, GitHub Copilot, GitHub Pull Requests, IntelliCode, Jupyter, Material Icon Theme, Material Theme Icons, Path Intellisense, Python,Python Debugger, Python Environment Manager, Python Environments, Python Extension Pack, Python Intend, Pylance, Ruff, vscode-pdf*
 
 - Change color-theme by CTRL+K CTRL+T
 
