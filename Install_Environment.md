@@ -4,7 +4,7 @@
 
 - Download the VSCode-Installer from [VisualStudio.com](https://code.visualstudio.com/) and install it
 - Download the Installer for Visual Studio Build Tools from [Build Tools](https://visualstudio.microsoft.com/de/downloads/#build-tools-for-visual-studio-2022) and install it
-- Download GiHub Desktop from [github.com](https://desktop.github.com/download/) and install it
+- Download Git for your client from [Git](https://git-scm.com/downloads) and install it
 
 ## Create a workspace-folder and create the project
 
