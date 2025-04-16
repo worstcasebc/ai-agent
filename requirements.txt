@@ -11,3 +11,4 @@ imap-tools # For email loading and processing
 beautifulsoup4 # For HTML parsing
 bs4 # For HTML parsing
 lxml # For HTML parsing
+python-pptx # For PowerPoint document loading
