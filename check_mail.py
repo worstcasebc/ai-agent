@@ -21,3 +21,7 @@ with MailBox("imap.gmail.com").login(
         with open(os.getenv("EMAIL_PATH_HTML"), "a") as myfile:
             print("✨ write mail")
             myfile.write(msg.html)
+
+        with open(os.getenv("EMAIL_PATH"), "a") as myfile:
+            print("✨ write mail")
+            myfile.write(msg.text)

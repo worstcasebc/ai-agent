@@ -25,9 +25,9 @@ def main():
         clear_database()
 
     # Create (or update) the data store.
-    documents = load_documents()
-    chunks = split_documents(documents)
-    add_to_chroma(chunks)
+    # documents = load_documents()
+    # chunks = split_documents(documents)
+    # add_to_chroma(chunks)
 
     # maildocument = load_maildocument()
     # mail_chunks = split_documents(maildocument)
@@ -41,8 +41,14 @@ def load_documents():
     return document_loader.load()
 
 
+# def load_maildocument():
+#     document_loader = BSHTMLLoader("./temp/mail.html")
+#     print("✨ loaded mail")
+#     return document_loader.load()
+
+
 def load_maildocument():
-    document_loader = BSHTMLLoader("./temp/mail.html")
+    document_loader = TextLoader("./temp/mail.txt")
     print("✨ loaded mail")
     return document_loader.load()
 
