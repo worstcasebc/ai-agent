@@ -18,11 +18,11 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
 - &#9989; **Chunking and Embedding**: Splits documents into manageable chunks and generates embeddings for efficient information retrieval.
 - &#9989; **LLM Integration**: Feeds processed data into a large language model (LLM) to retrieve relevant information and insights.
 - &#10060; **Task Automation**:
-    - Prepares ESR-slides based on extracted data
+    - &#9989; Prepares ESR-slides based on extracted data
     - Schedules and invites stakeholders to ESR- and SSR-meetings
-    - Creates and updates CRM entry automatically
-    - Creates Talento-opportunity to search for partners to staff the project-team
-    - Start DRSR-request automatically
+    - Creates and updates CRM entry automatically -> fake API
+    - Creates Talento-opportunity to search for partners to staff the project-team -> fake API
+    - Start DRSR-request automatically -> fake API
     - Find and retrieve project-references from BidGen and/or BDKX
     - Create concepts and other requested documents
 
@@ -111,6 +111,9 @@ This project is an AI-powered agent designed to streamline and enhance the bid p
      ```
       ```bash
      python query_data.py "Bitte suche mir aus allen URLs, in der im Kontext bereitgestellten Mail von DTVP, diejenige URL heraus, die zur Projektanfrage der Deutschen Bundesbank, Zentralbereich Beschaffungen gehört und exztrahiere mir die in dieser URL genannte ID, welche mit 'CX beginnt."
+     ```
+     ```bash
+     python pupdate_ESR_slides.py
      ```
 
 ## Technologies Used
