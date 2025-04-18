@@ -4,8 +4,14 @@
 
 - Download the VSCode-Installer from [VisualStudio.com](https://code.visualstudio.com/) and install it
 - Download the Installer for Visual Studio Build Tools from [Build Tools](https://visualstudio.microsoft.com/de/downloads/#build-tools-for-visual-studio-2022) and install it
-    - select MVC++ 14+ and install it
+    - select 'Programming environment Desktop for VC++ on left side
+    - the select MVC++ 14+ (and all other pre-selected components) on right side and install it
 - Download Git for your client from [Git](https://git-scm.com/downloads) and install it
+
+## potentially errors
+
+- if installation of python-libraries (especially langchain_chroma) fails for command ```pip install -r requirements.txt```, then maybe you forgot to install the Visual Studio Build Tools (see above) correctly
+- ...
 
 ## Create a workspace-folder and create the project
 
@@ -60,11 +66,14 @@
 
 - Change color-theme by CTRL+K CTRL+T
 
-- Activate 'format on save' within Settings by CTRL+,
+### within Settings by CTRL+,
 
-    ![Settings for 'format on save'](./tutorial/format_on_save.png)
+- Activate editor.formatOnSave
 
-- Activate 'Ruff' as 'default formatter' also in settings
+- Activate 'Ruff' as editor.defaultFormatter
 
-- Activate 'jupyter execute selection'  
+- Activate jupyter.interactiveWindow.textEditor.executeSelection 
 
+- Activate python.terminal.activateEnvironment 
+
+- Activate python.terminal.activateEnvInCurrentTerminal

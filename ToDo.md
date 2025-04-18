@@ -1,9 +1,19 @@
 ## continued tasks
 
+**add comments** 
+
+- necessary for all code-files (include examples) 
+- other project-partners need to learn from that code and will appreciate any help
+
 **watchdog for email-account**
 
 - to retrieve all DTVP-related mails and check for specific client-bids
 - extract URL for DTVP
+
+- it's possible to create an MS Developer-Account to get a Azure test-tenant and test the app with Exchange Online
+    - get access [here](https://learn.microsoft.com/de-de/office/developer-program/microsoft-365-developer-program)
+    - register your app [more info](https://helpcenter.veeam.com/docs/vdcm365/userguide/check_perms_for_o365_exchange_api.html)
+    - folloow [that example](https://www.youtube.com/watch?app=desktop&v=bBslvqBCjAA&t=0s&ab_channel=SigmaCoding)
 
 ## start triggered by receiving a specific email
 
