@@ -10,6 +10,16 @@ Credits to https://github.com/pixegami
 
 This project is an AI-powered agent designed to streamline and enhance the bid processes around an OPLs client. By leveraging advanced natural language processing and automation, the AI-agent extracts information from documents, processes it intelligently, and performs various tasks to support the bid-workflow.
 
+## Tutorials used
+
+[AI-Agent with Pydantic](https://www.youtube.com/watch?v=S712jSrLWkA&ab_channel=Rabbitmetrics)
+
+[Building AI-Agents without Frameworks](https://www.youtube.com/watch?v=bZzyPscbtI8&t=1475s&ab_channel=DaveEbbelaar)
+
+[Building AI-Agents with Pydantic](https://www.youtube.com/watch?v=zcYtSckecD8&ab_channel=DaveEbbelaar)
+
+[Agentic AI](https://www.ilsilfverskiold.com/articles/agentic-aI-comparing-new-open-source-frameworks)
+
 ## Features
 
 - first of all, have a look into [ToDo.md](ToDo.md) to check for more information and next packages to get a PoC for

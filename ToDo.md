@@ -13,7 +13,7 @@
 - it's possible to create an MS Developer-Account to get a Azure test-tenant and test the app with Exchange Online
     - get access [here](https://learn.microsoft.com/de-de/office/developer-program/microsoft-365-developer-program)
     - register your app [more info](https://helpcenter.veeam.com/docs/vdcm365/userguide/check_perms_for_o365_exchange_api.html)
-    - folloow [that example](https://www.youtube.com/watch?app=desktop&v=bBslvqBCjAA&t=0s&ab_channel=SigmaCoding)
+    - follow [that example](https://www.youtube.com/watch?app=desktop&v=bBslvqBCjAA&t=0s&ab_channel=SigmaCoding)
 
 ## start triggered by receiving a specific email
 
@@ -25,7 +25,7 @@
 - extract ZIP
 - split documents & create embeddings
 - feed the LLM with that embeddings
-- see [How to create a vactor-db for use with an LLM](https://github.com/pixegami)
+- see [How to create a vector-db for use with an LLM](https://github.com/pixegami)
 
 **prepare first bid-tasks**
 
